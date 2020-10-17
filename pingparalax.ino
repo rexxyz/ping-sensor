@@ -3,9 +3,9 @@ include <NewPing.h>
 include <SharpIR.h>
 
 // Define model and input pin:
-float Infrader_depan = A0;
-float Infrader_kanan = A1;
-float Infrader_kiri = A2;
+float Infrader_depan = B3;
+float Infrader_kanan = A4;
+float Infrader_kiri = A7;
 define model 1080
 
 float ping_depan = 24;
@@ -13,8 +13,6 @@ float ping_kiri_Depan = 12;
 float ping_kiri_belakang = 29;
 float ping_kiri = 13;
 float ping_kanan = 9;
-float ping_kanan_belakang = 11;
-float ping_kanan_depan = 4;
 float ping_belakang = 46; 
 #define MAX_DISTANCE 200 // Maximum distance we want to ping for (in centimeters). Maximum sensor distance is rated at 400-500cm.
 
@@ -40,8 +38,6 @@ NewPing sonar2(ping_kiri_Depan, ping_kiri_Depan, MAX_DISTANCE);
 NewPing sonar3(ping_kiri_belakang, ping_kiri_belakang, MAX_DISTANCE);
 NewPing sonar4(ping_kiri, ping_kiri, MAX_DISTANCE);
 NewPing sonar5(ping_kanan, ping_kanan, MAX_DISTANCE);
-NewPing sonar6(ping_kanan_belakang, ping_kanan_belakang, MAX_DISTANCE);
-NewPing sonar7(ping_belakang, ping_belakang, MAX_DISTANCE);
 NewPing sonar8(ping_kanan_depan, ping_kanan_depan, MAX_DISTANCE);
 
 //pin for communication with openCM///
