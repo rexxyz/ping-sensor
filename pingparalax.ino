@@ -45,11 +45,11 @@ NewPing sonar7(ping_belakang, ping_belakang, MAX_DISTANCE);
 NewPing sonar8(ping_kanan_depan, ping_kanan_depan, MAX_DISTANCE);
 
 //pin for communication with openCM///
-#define pin_bit4  14
-#define pin_bit3  15
-#define pin_bit2  16
-#define pin_bit1  2
-#define pin_bit0  3
+#define pin_bit4  20
+#define pin_bit3  21
+#define pin_bit2  24
+#define pin_bit1  5
+#define pin_bit0  7
 
 void setup() {
   Serial.begin(115200);
