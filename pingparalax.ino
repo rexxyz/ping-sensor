@@ -125,7 +125,11 @@ void loop() {
   Serial1.println(distance2_cm);
   delay(1000);
   
-  
+   //line sensor
+  Serial1.println("f");
+  dataAnalog0 = analogRead(A3); // Konversi pin A0 ke digital
+  Serial1.println(dataAnalog0/10); // Kirim datanya
+  //delay(1000); // delay 200 ms 
 
     //flame sensor
   Serial1.println("g");//sensor kiri
