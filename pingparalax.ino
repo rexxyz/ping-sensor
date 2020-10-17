@@ -124,8 +124,14 @@ void loop() {
   Serial1.println("d");
   Serial1.println(distance2_cm);
   delay(1000);
+  
+  
 
- 
+    //flame sensor
+  Serial1.println("g");//sensor kiri
+  int sensorValue2 = analogRead(A4);
+  Serial1.println(sensorValue2);
+  //  delay(70); 
 
   Serial1.println("i");//sensor depan
   int sensorValue3 = analogRead(A5);
