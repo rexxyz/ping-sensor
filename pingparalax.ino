@@ -1,12 +1,12 @@
 include <NewPing.h>
 // Include the library:
-#include <SharpIR.h>
+include <SharpIR.h>
 
 // Define model and input pin:
 float Infrader_depan = A0;
 float Infrader_kanan = A1;
 float Infrader_kiri = A2;
-#define model 1080
+define model 1080
 
 float ping_depan = 24;
 float ping_kiri_Depan = 12;
