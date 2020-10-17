@@ -98,25 +98,10 @@ void loop() {
   //delay(10);
   
   Serial1.println();
-  Serial1.println("$");//sensor ping kanan belakang 
-  Serial1.print(sonar6.ping_cm()); 
-  //Serial.print(" cm");
-  //delay(10);
-  
-  Serial1.println();
   Serial1.println("a");//sensor ping kanan depan
   Serial1.print(sonar7.ping_cm());
   //Serial.print(" cm");
   //delay(10);
-  
-  Serial1.println();
-  Serial1.println("^");//sensor ping belakang
-  Serial1.print(sonar8.ping_cm()); 
-  //Serial.print(" cm");
-   //delay(100);
-  Serial1.println();
-
-
   
   Serial1.println("c");
   Serial1.println(distance1_cm);
