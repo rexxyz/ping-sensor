@@ -116,7 +116,7 @@ void loop() {
 
   
   Serial1.println("c");
-  Serial1.println(distance1_cm);
+  Serial1.println(distance1_cm);//menampilkan data distance1
 
   Serial1.println("d");
   Serial1.println(distance2_cm);
@@ -130,7 +130,7 @@ void loop() {
   //delay(70); 
 
   Serial1.println("h");//sensor kanan
-  int sensorValue4 = analogRead(A6);
+  int sensorValue4 = analogRead(A6);// membaca sensor pada pin a6
   Serial1.println(sensorValue4);
   //delay(100); 
 
